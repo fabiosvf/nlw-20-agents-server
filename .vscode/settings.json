@@ -1,0 +1,39 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "Biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "Biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "Biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "Biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "Biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "Biomejs.biome"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "Biomejs.biome",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "files.associations": {
+    "*.yml": "yaml",
+    "*.yaml": "yaml",
+    "docker-compose.yml": "yaml"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "emmet.showExpandedAbbreviation": "never",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  }
+}
