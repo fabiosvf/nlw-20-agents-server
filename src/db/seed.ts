@@ -2,9 +2,14 @@ import { reset, seed } from 'drizzle-seed';
 import { db, sql } from './connection.ts';
 import { schema } from './schema/index.ts';
 
+const seederSchema = {
+  rooms: schema.rooms,
+  questions: schema.questions,
+};
+
 await reset(db, schema);
 
-await seed(db, schema).refine((f) => {
+await seed(db, seederSchema).refine((f) => {
   return {
     rooms: {
       count: 5,
@@ -15,6 +20,9 @@ await seed(db, schema).refine((f) => {
     },
     questions: {
       count: 20,
+    },
+    audioChunks: {
+      count: 0,
     },
   };
 });
